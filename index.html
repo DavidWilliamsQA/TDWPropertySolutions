@@ -14,6 +14,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -28,6 +32,8 @@
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
     
     <link rel="stylesheet" href="css/flaticon.css">
@@ -47,10 +53,9 @@
 
               <div class="collapse navbar-collapse" id="ftco-nav">
                   <ul class="navbar-nav ml-auto">
-                      <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Compliance</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                      <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                   </ul>
               </div>
           </div>
@@ -63,24 +68,214 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
                 <div class="col-md-7 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 style="color: #F4EDED; font-family: 'Ubuntu', sans-serif; cursive" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">TDW Property Solutions</h1>
-                    <h2 style="color: #F4EDED; font-family: 'Ubuntu', sans-serif; cursive" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><b> Coming Soon...</b></h2>
+                    <h1 style="color: #F4EDED; font-family: 'Ubuntu', sans-serif; cursive;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">TDW Property Solutions</h1>
+                    <h3 style="color: #F4EDED; font-family: 'Ubuntu', sans-serif; cursive;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Producing Results Through Collaboration</h3>
                 </div>
             </div>
         </div>
     </div>
 
+    <section class="ftco-section ftco-game-schedule ftco-no-pt"  style="background-color: #F4EDED">    
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-color: #F4EDED">
+    	<div class="container">
+          <div>
+            <div class="row d-flex">
+
+                <div class="col-md-6 d-flex" style="height: 500px;">
+    				<div class="img d-flex align-self-stretch" style="background-image:url(images/Row-of-colourful-houses.jpg);"></div>
+    			</div>
+
+                <div class="col-md-6 pl-lg-5 py-5">
+    				<div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                                <h3 class="mb-4" style="text-align: center; color:#1C77C3; font-family: 'Noto Sans Display', sans-serif;">YOUR ONE STOP SHOP FOR YOUR PROPERTY INVESTMENT NEEDS</h3>
+                                    <p style="color: #000000; font-family: 'Noto Sans Display', sans-serif;">
+                                        Are you tired of getting next to nothing in interest from having your money sat in the bank? <br>
+                                        Are you looking to make your money work hard for you instead of vice versa? <br>
+                                        Get in contact with us today for a 30 minute no obligation consultation call and 
+                                        let us explain how we can help you achieve this.
+                                    </p>
+                        </div>
+                    </div>
+
+                        <div class="col-md-6">
+                            <button id="myBtn" class="btn btn-primary">
+                                <span>Contact Us Today</span>
+                            </button>
+                        </div>
+                    
+		        </div>
+ 
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <form class="bg-light p-5 contact-form contact1-form validate-form">
+            <h2 class="mb-4" style="text-align: center; color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;"><b>Get in touch</b></h2>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "First Name is required">
+                <input class="input1 form-control" type="text" name="firstName" placeholder=" First Name">
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "Last Name is required">
+              <input class="input1 form-control" type="text" name="lastName" placeholder="Last Name">
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <input class="input1 form-control" type="email" name="email" placeholder="Email">
+                <!-- <span class="shadow-input1"></span> -->
+            </div>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "Number is required">
+                <input type="number" class="form-control input1" name="number" placeholder="Number">
+            </div>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "Please pick an option">
+                <h3 style="text-align: justify; color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">
+                    Please select what level best describes your experience level with property investing:
+                </h3>
+
+                <input type="radio" class="input1" value="Experienced" name="level">
+                <label for="Experienced" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Experienced</label><br>
+
+                <input type="radio" class="input1" value="Intermediate" name="level">
+                <label for="Intermediate" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Intermediate</label><br>
+
+                <input type="radio" class="input1" value="Beginner" name="level">
+                <label for="Beginner" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Beginner</label><br>
+            </div>
+
+            <div class="form-group wrap-input1 validate-input" data-validate = "Message is required">
+                <textarea class="form-control input1" cols="30" rows="7" name="message" placeholder="Let us know any specifics regarding your situation..."></textarea>
+                <!-- <span class="shadow-input1"></span> -->
+            </div>
+
+            <div class="form-group container-contact1-form-btn">
+                <button class="contact1-form-btn btn btn-primary py-3 px-5">
+                    <span>
+                        Submit
+                    </span>
+                </button>
+            </div>
+
+        </form>
+
+        </div>
+    
+    </div>
+ 
+    <section class="ftco-section ftco-game-schedule ftco-no-pt"  style="background-color: #F4EDED">
+
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-color: #F4EDED">
+    	<div class="container">
+          <div>
+            <div class="row d-flex">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="cards">
+                        <h2 style="text-align: center; color: #1C77C3"><b>Bespoke Service</b></h2>
+                        <p style="color: #000000; font-family: 'Noto Sans Display', sans-serif;">
+                            <b>At TDW Property Solutions, we recognise that individuals differ in their criteria so we aim 
+                            to deliver a service tailored to YOU! Whether it is protfolio growth, generating a passsive income 
+                            or getting on the property ladder.</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="cards">
+                        <h2 style="text-align: center; color: #1C77C3"><b>Property Sourcing</b></h2>
+                        <p style="color: #000000; font-family: 'Noto Sans Display', sans-serif;">
+                            <b>We look to match our investors with the right properties by finding good deals both on the market and off the market. 
+                                We priamrily deal with Buy-to-Lets, Buy Refurbish Refinance Rent (BRRR) and HMO investment properties.</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="cards">
+                        <h2 style="text-align: center; color: #1C77C3"><b>Case Progression</b></h2>
+                        <p style="color: #000000; font-family: 'Noto Sans Display', sans-serif;">
+                            <b>At TDW Property Solutions we aim to deliver a hands free service and take charge of the case progression 
+                                right through to completion providing high levels of customer service throughout the process.</b>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-game-schedule ftco-no-pt"  style="background-color: #F4EDED">
+        
+    </section>
 
 
-      <footer class="ftco-footer ftco-footer-2 ftco-section">
+    <footer class="ftco-footer ftco-footer-2 ftco-section">
+
+        <div class="container">
+
+            <div class="row ftco-animate">
+                <div class="col-md-12 carousel-game-schedule owl-carousel">
+
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center">
+                                <img src="images/prs-logo.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center">
+                                <img src="images/HMRC_logo.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center">
+                                <img src="images/ico-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center">
+                                <img src="images/professional-indemnity-insurance-500x500.jpg">
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
           <div class="container">
               <div class="row mb-5">
                   <div class="col-md">
                       <div class="ftco-footer-widget mb-4">
                           <h2 class="ftco-heading-2">TDW Property Solutions</h2>
                           <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                              <li class="ftco-animate"><a style="background: #1C77C3" href=""><span class="icon-facebook"></span></a></li>
-                              <li class="ftco-animate"><a style="background: #1C77C3" href=""><span class="icon-instagram"></span></a></li>
+                              <li class="ftco-animate"><a style="background: #1C77C3" href="https://www.facebook.com/TDW-Property-Solutions-102610845522852/?ref=page_internals"><span class="icon-facebook"></span></a></li>
+                              <li class="ftco-animate"><a style="background: #1C77C3" href="https://www.instagram.com/tdwpropertysolutions/"><span class="icon-instagram"></span></a></li>
                           </ul>
                       </div>
                   </div>
@@ -90,6 +285,7 @@
                           <div class="block-23 mb-3">
                               <ul>
                                   <li><a href="mailto:info@tdwpropertysolutions.com"><span class="icon icon-envelope"></span><span class="text">info@tdwpropertysolutions.com</span></a></li>
+                                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">07788420026</span></a></li>
                               </ul>
                           </div>
                       </div>
@@ -97,7 +293,7 @@
               </div>
               <div class="row">
                   <div class="col-md-12 text-center">
-                      <a href="#">Privacy Policy</a>
+                      <a href="privacy-policy.html">Privacy Policy</a>
                   </div>
               </div>
               <div class="row">
@@ -128,6 +324,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
+  <script src="js/main3.js"></script>
     
   </body>
 </html>

@@ -5,17 +5,24 @@
 
     /*==================================================================
     [ Validate ]*/
-    var name = $('.validate-input input[name="name"]');
+    var firstName = $('.validate-input input[name="firstName"]');
+    var lastName = $('.validate-input input[name="lastName"]');
     var email = $('.validate-input input[name="email"]');
     var number = $('.validate-input input[name="number"]');
     var message = $('.validate-input textarea[name="message"]');
+    var experience = $('.validate-input input[name="level"]');
 
 
     $('.validate-form').on('submit',function(e){
         var check = true;
 
-        if($(name).val().trim() == ''){
-            showValidate(name);
+        if($(firstName).val().trim() == ''){
+            showValidate(firstName);
+            check=false;
+        }
+
+        if($(lastName).val().trim() == ''){
+            showValidate(lastName);
             check=false;
         }
 
@@ -33,6 +40,11 @@
             showValidate(message);
             check=false;
         }
+
+        if($(experience).val().trim() == ''){
+            showValidate(experience);
+            check=false;
+        }
         if(!check)
             return false;
 
@@ -48,6 +60,7 @@
                 if(response.result == "success") {
                     $('.contact1-form')[0].reset();
                     alert('Thank you for contacting us.');
+                    window.location.reload();
                     return true;
                 }
                 else {
