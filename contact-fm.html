@@ -30,36 +30,6 @@
       <link rel="icon" type="image/png" href="images/2_2-removebg.png" sizes="32x32">
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
-          <a class="navbar-brand" href="index.html" ><img class="header__logo" src="images/2_2-removebg.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="oi oi-menu"></span> Menu
-          </button>
-
-          <div class="collapse navbar-collapse" id="ftco-nav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-    <!-- END nav -->
-    
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/2.png');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-center">
-          <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Contact Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact Us <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
   <section class="ftco-section ftco-counter img" id="section-counter" style="background-color: #F4EDED">
       <div class="container">
               <div class="row d-flex">
@@ -92,27 +62,16 @@
                               <input type="number" class="form-control input1" name="number" placeholder="Number">
                           </div>
 
-                          <div class="form-group wrap-input1">
-                            <input type="hidden" class="form-control input1" name="whatForm" value="website">
+                          <div class="form-group wrap-input1 validate-input">          
+                            <input type="hidden" checked="checked" class="form-control input1" value="Vendor" name="level">
                           </div>
 
-                          <div class="form-group wrap-input1 validate-input" data-validate = "Please pick an option">
-                            <p style="text-align: justify; color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">
-                                Please select what level best describes your experience level with property investing:
-                            </p>
-            
-                            <input type="radio" class="input1" value="Experienced" name="level">
-                            <label for="Experienced" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Experienced</label><br>
-            
-                            <input type="radio" class="input1" value="Intermediate" name="level">
-                            <label for="Intermediate" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Intermediate</label><br>
-            
-                            <input type="radio" class="input1" value="Beginner" name="level">
-                            <label for="Beginner" style="color: #1C77C3; font-family: 'Noto Sans Display', sans-serif;">Beginner</label><br>
-                        </div>
+                          <div class="form-group wrap-input1">
+                            <input type="hidden" class="form-control input1" name="whatForm" value="flyer">
+                          </div>
 
                           <div class="form-group wrap-input1 validate-input" data-validate = "Message is required">
-                              <textarea class="form-control input1" cols="30" rows="7" name="message" placeholder="Message"></textarea>
+                              <textarea class="form-control input1" cols="30" rows="7" name="message" placeholder="Please tell us a little bit about your property (i.e. the number of bedrooms, the condition etc)"></textarea>
                               <span class="shadow-input1"></span>
                           </div>
 
@@ -196,11 +155,6 @@
                           </ul>
                       </div>
                   </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <a href="privacy-policy.html">Privacy Policy</a>
               </div>
           </div>
           <div class="row">
